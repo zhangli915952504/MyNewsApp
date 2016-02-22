@@ -1,0 +1,2 @@
+include ':app', ':imageSlider_library'
+project(':imageSlider_library').projectDir = new File('imageSlider_viktor_library')

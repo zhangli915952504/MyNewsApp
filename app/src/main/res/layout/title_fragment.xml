@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+
+    tools:context="zhangli.newsapp.MainActivity"
+    android:id="@+id/title"
+    android:background="@color/red">
+
+    <ImageView
+        android:id="@+id/title_imageview"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_selector_to_menu"
+        android:src="@drawable/button_back_new"/>
+
+    <TextView
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="7dp"
+        android:id="@+id/title_textview"
+        android:layout_toRightOf="@id/title_imageview"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新闻客户端"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<LinearLayout
+    android:id="@+id/relativelayout_fragment_new"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gainsboro">
+
+        <TextView
+            android:id="@+id/frist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:gravity="center"
+            android:text="头条"
+            android:textColor="@color/darkgrey"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/fun_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="33dp"
+            android:layout_toRightOf="@id/frist_text"
+            android:gravity="center"
+            android:text="娱乐"
+            android:textColor="@color/darkgrey"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/hot_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="33dp"
+            android:layout_toRightOf="@id/fun_text"
+            android:gravity="center"
+            android:text="财经"
+            android:textColor="@color/darkgrey"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/sport_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="33dp"
+            android:layout_toRightOf="@id/hot_text"
+            android:gravity="center"
+            android:text="体育"
+            android:textColor="@color/darkgrey"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/local_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="33dp"
+            android:layout_toRightOf="@id/sport_text"
+            android:gravity="center"
+            android:text="科技"
+            android:textColor="@color/darkgrey"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/image_more_dakai"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="Dakai"
+            android:background="@drawable/button_selector_more"
+            android:src="@drawable/button_more"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
